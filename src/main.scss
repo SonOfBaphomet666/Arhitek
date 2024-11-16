@@ -1,4 +1,15 @@
-@import "./components/navbar/navbar.scss";
+@import "./utils/base.scss";
+@import "./utils/text.scss";
 
-@import "./pages/about/about.scss";
+@import "./components/navbar/navbar.scss";
+@import "./components/footer/footer.scss";
+
 @import "./pages/home/home.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "STIX Two Text", serif;
+}

@@ -1,0 +1,95 @@
+.footerBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #212325;
+
+  &__textBox {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    width: 40%;
+    padding: 50px;
+    color: $white;
+  }
+  &__title {
+    // display: flex;
+    // justify-content: flex-start;
+    font-size: 24px;
+    width: 100%;
+  }
+  &__title2 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  &__par {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+
+  &__boxImg {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  &__img {
+    width: 750px;
+    height: 600px;
+  }
+
+  &__infoBox {
+    width: 50%;
+    // display: flex;
+    // justify-content: center;
+  }
+
+  &__inputBox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 230px;
+    color: $white;
+    border-top: solid 1px $white;
+    border-bottom: solid 1px $white;
+    border-right: solid 1px #00000000;
+    border-left: solid 1px #00000000;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #212325;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    width: 252px;
+    border-top: solid 1px $white;
+    border-bottom: solid 1px $white;
+    border-right: solid 1px #00000000;
+    border-left: solid 1px #00000000;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #212325;
+    color: $white;
+  }
+
+  &__inputBox2 {
+    margin-bottom: 20px;
+  }
+
+  &__contract {
+    // position: absolute;
+    width: 20%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // top: 6px;
+    // bottom: 20px;
+    color: $white;
+  }
+}
