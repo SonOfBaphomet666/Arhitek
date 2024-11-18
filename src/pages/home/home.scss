@@ -1,24 +1,33 @@
 main {
   .videoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
+
+    &__video {
+      width: 1900px;
+    }
   }
   .about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__box {
-      display: flex;
-      justify-content: center;
       position: absolute;
-      width: 100%;
     }
     &__imgHouse {
+      background-color: #212325;
       width: 1920px;
       height: 1080px;
     }
     &__textBox {
       display: flex;
       flex-direction: column;
-      color: $white;
-      margin-top: 400px;
+      color: #efefef;
+      // margin-top: 400px;
       width: 600px;
       height: 400px;
     }
@@ -35,25 +44,42 @@ main {
     &__name {
       display: flex;
       justify-content: flex-end;
+      font-size: 24px;
       width: 100%;
     }
     .linkBtn {
+      font-size: 16px;
       display: flex;
       justify-content: center;
       width: 30%;
-      border-top: solid 1px $white;
-      border-bottom: solid 1px $white;
-      color: $white;
-      padding: 10px;
+      border-top: solid 1px #54595f;
+      border-bottom: solid 1px #54595f;
+      color: #e0e0e0;
+      padding: 12px 24px;
+      transition: all 0.2s ease-in-out;
+      background-color: #00000000;
+
+      &:hover {
+        color: #ffffff; /* текст становится белым */
+        transform: translateX(4px); /* кнопка выдвигается вперед */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
     }
   }
 
   .example {
     background-color: #1c1f21;
+    padding: 10px;
+
+    &__text {
+      padding: 20px;
+      width: 710px;
+      height: 1000px;
+    }
     &__box {
       display: flex;
       color: $white;
-      padding: 50px;
+      padding: 20px;
     }
 
     &__title {
@@ -66,83 +92,99 @@ main {
       font-size: 42px;
     }
     &__par {
-      width: 750px;
       font-size: 20px;
     }
     &__boxBtn {
       display: flex;
       justify-content: flex-start;
-      // margin-top: 10px;
     }
 
     .linkBtn {
       display: flex;
       justify-content: center;
-      border-top: solid 1px $white;
-      border-bottom: solid 1px $white;
+      border-top: solid 1px #3b3e3f;
+      border-bottom: solid 1px #3b3e3f;
       color: $white;
       margin-top: 15px;
       padding: 10px;
+      transition: all 0.2s ease-in-out;
+      color: #e0e0e0;
+
+      &:hover {
+        color: #ffffff; /* текст становится белым */
+        transform: translateX(4px); /* кнопка выдвигается вперед */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
     }
     &__boxImg {
-      display: flex;
-      justify-content: center;
-      width: 50%;
-      overflow: hidden;
-      margin-right: 100px;
+      padding: 10px;
     }
     &__img {
-      overflow: hidden;
-      max-width: 100%;
-      max-height: 100%;
-      padding: 30px;
-      object-fit: cover;
-      animation: zoom 5s infinite;
+      background-color: #54595f;
+      width: 1120px;
+      height: 1144px;
     }
   }
 
   .example2 {
-    background-color: #212325;
-    &__box {
-      display: flex;
-      justify-content: flex-end;
-      color: $white;
-    }
+    background-color: #16181a;
+    padding: 10px;
 
-    &__title {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      font-size: 24px;
-    }
-    &__title2 {
-      margin-bottom: 10px;
-      font-size: 42px;
-    }
-    &__par {
-      width: 750px;
-      font-size: 20px;
+    &__boxImg {
+      padding: 10px;
     }
 
     .linkBtn {
       display: flex;
       justify-content: center;
-      border-top: solid 1px $white;
-      border-bottom: solid 1px $white;
+      border-top: solid 1px #3b3e3f;
+      border-bottom: solid 1px #3b3e3f;
       color: $white;
       margin-top: 15px;
       padding: 10px;
+      color: #e0e0e0;
+
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: #ffffff; /* текст становится белым */
+        transform: translateX(4px); /* кнопка выдвигается вперед */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
     }
   }
-}
 
-@keyframes zoom {
-  0% {
-    transform: scale(0.9);
+  .panorama {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    &__box {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+    &__text {
+      width: 300px;
+      height: 80px;
+    }
+
+    &__img{
+      background-color: #54595f;
+      width: 1800px;
+      height: 640px;
+    }
   }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.9);
+
+  @keyframes zoom {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
   }
 }
