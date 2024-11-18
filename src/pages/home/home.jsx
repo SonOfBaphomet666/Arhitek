@@ -134,10 +134,11 @@ const Home = () => {
       <section className="panorama">
         <div className="panorama__box">
           <div className="panorama__text">
-            <h4>PANORAMA | 360</h4>
-            <h3>Панорама</h3>
+            <h3>PANORAMA | 360</h3>
+            <h2>Панорама</h2>
           </div>
-          <div className="panorama__img">
+          <div className="panorama__imgBox">
+            <div className="panorama__img" />
           </div>
         </div>
       </section>
