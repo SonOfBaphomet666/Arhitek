@@ -42,6 +42,12 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Create Jekyll config
+        run: |
+          echo "sass:" >> _config.yml
+          echo "  sass_dir: src/main.scss" >> _config.yml
+          echo "  style: compressed" >> _config.yml
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
