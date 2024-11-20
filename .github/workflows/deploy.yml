@@ -46,7 +46,7 @@ jobs:
         run: |
           echo "sass:" >> _config.yml
           echo "  sass_dir: src" >> _config.yml
-          echo "  style: compressed" >> _config.yml
+          echo "  style: main.scss" >> _config.yml
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
